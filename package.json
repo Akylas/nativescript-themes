@@ -1,0 +1,84 @@
+{
+    "name": "nativescript-themes",
+    "version": "2.0.1",
+    "description": "A NativeScript plugin to deal with Themes in the Declarative UI.",
+	"scripts": {
+        "tsc": "tsc -skipLibCheck",
+        "clean": "rimraf ./plugin/**/*.d.ts ./plugin/**/*.js ./plugin/**/*.js.map plugin/node_modules plugin/package-lock.json",
+        "build": "npm run tsc && cp README.md plugin/",
+        "demo.ios": "npm i && npm run tsc && cd demo && tns run ios",
+        "demo.android": "npm i && npm run tsc && cd demo && tns run android",
+        "clean.demo": "rimraf demo/hooks demo/node_modules demo/platforms",
+        "plugin.watch": "npm run tsc -- -w",
+        "publish": "npm run build && lerna publish",
+        "commitmsg": "commitlint -e $GIT_PARAMS"
+    },
+    "nativescript": {
+        "platforms": {
+            "android": "5.0.0",
+            "ios": "5.0.0"
+        },
+        "plugin": {
+            "pan": "true",
+            "core3": "false",
+            "core4": "true",
+            "category": "Interface"
+        }
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/nathanaela/nativescript-themes.git"
+    },
+    "keywords": [
+        "NativeScript",
+        "themes",
+        "ui",
+        "landscape",
+        "ios",
+        "android",
+        "colors"
+    ],
+    "author": {
+        "name": "Nathanael Anderson",
+        "email": "nathan@master-technology.com"
+    },
+    "contributors": [
+        {
+            "email": "bradwaynemartin@gmail.com",
+            "url": "https://github.com/bradmartin",
+            "name": "Brad Martin"
+        },
+        {
+            "email": "tralves@gmail.com",
+            "url": "https://github.com/tralves",
+            "name": "Tiago Alves"
+        }
+    ],
+    "license": {
+        "type": "MIT",
+        "url": "https://github.com/nathanaela/nativescript-themes/blob/master/LICENSE"
+    },
+    "bugs": {
+        "url": "https://github.com/nathanaela/nativescript-themes/issues"
+    },
+    "homepage": "https://github.com/nathanaela/nativescript-themes",
+    "readmeFilename": "README.md",
+    "devDependencies": {
+        "@commitlint/cli": "^8.1.0",
+        "@commitlint/config-conventional": "^8.1.0",
+        "husky": "^3.0.2",
+        "lerna": "^3.16.4",
+        "prettier": "~1.18.2",
+        "tns-core-modules": "~6.0.3",
+        "tns-platform-declarations": "~6.0.3",
+        "typescript": "~3.5.3",
+        "tslint": "^5.18.0",
+        "tslint-config-prettier": "^1.18.0",
+        "tslint-config-standard": "^8.0.1"
+    },
+    "commitlint": {
+        "extends": [
+            "@commitlint/config-conventional"
+        ]
+    }
+}

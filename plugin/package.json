@@ -1,0 +1,62 @@
+{
+    "name": "nativescript-akylas-themes",
+    "version": "2.0.1",
+    "description": "A NativeScript plugin to deal with Themes in the Declarative UI.",
+    "main": "themes.js",
+    "typings": "themes.d.ts",
+    "nativescript": {
+        "platforms": {
+            "android": "5.0.0",
+            "ios": "5.0.0"
+        },
+        "plugin": {
+            "pan": "true",
+            "core3": "false",
+            "core4": "true",
+            "category": "Interface"
+        }
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Akylas/nativescript-themes.git"
+    },
+    "keywords": [
+        "NativeScript",
+        "themes",
+        "ui",
+        "landscape",
+        "ios",
+        "android",
+        "colors"
+    ],
+    "author": {
+        "name": "Nathanael Anderson",
+        "email": "nathan@master-technology.com"
+    },
+    "contributors": [
+        {
+            "email": "bradwaynemartin@gmail.com",
+            "url": "https://github.com/bradmartin",
+            "name": "Brad Martin"
+        },
+        {
+            "email": "tralves@gmail.com",
+            "url": "https://github.com/tralves",
+            "name": "Tiago Alves"
+        },
+        {
+            "name": "Martin Guillon",
+            "url": "https://github.com/farfromrefug",
+            "email": "martin@akylas.fr"
+        }
+    ],
+    "license": {
+        "type": "MIT",
+        "url": "https://github.com/Akylas/nativescript-themes/blob/master/LICENSE"
+    },
+    "bugs": {
+        "url": "https://github.com/Akylas/nativescript-themes/issues"
+    },
+    "homepage": "https://github.com/Akylas/nativescript-themes",
+    "readmeFilename": "README.md"
+}
